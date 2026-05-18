@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Генератор случайных строк</h2>
+        
+        <div class="control">
+            <label for="length">Длина строки:</label>
+            <input type="number" id="length" min="1" value="8">
+        </div>
+
+        <div class="checkboxes">
+            <label><input type="checkbox" id="digits" checked> Цифры (0-9)</label>
+            <label><input type="checkbox" id="uppercase"> Заглавные латинские (A-Z)</label>
+            <label><input type="checkbox" id="lowercase"> Строчные латинские (a-z)</label>
+        </div>
+
+        <button id="generateBtn">Generate</button>
+
+        <div class="result">
+            <label for="output">Результат:</label>
+            <input type="text" id="output" readonly placeholder="Нажмите Generate">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
